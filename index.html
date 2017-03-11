@@ -1,0 +1,228 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <title>Saa Studio</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="src/js/jquery-3.1.0.js"></script>
+	  <script src="src/js/bootstrap.min.js"></script>
+	  <script src="src/js/utils.js"></script>
+	  <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    	<script src="js/jssor.slider-22.0.3.mini.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="src/fonts/font-awesome/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="src/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="src/css/custom.css">
+	</head>
+	<body id="saaStudio" data-spy="scroll" data-target=".navbar" data-offset="50">
+		<div class="sideNav">
+			<div class="topSideNav">
+				<div class="sideNavTitle"></div>
+				<div class="sideNavClose hide">X</div>
+			</div>
+		</div>
+	<div id="Home">
+		<div id="jampDiv">
+			<img class="jamp" src="src/images/saaJamp.gif" width="100" height="100" />
+		</div>
+		<div class="topNav">
+			<div class="logoLeft">
+				<img class="img-responsive" src="src/images/saastudiologo.png">
+			</div>
+			<div class="menuRight">
+				<div class="iconbar"></div>
+				<div class="iconbar"></div>
+				<div class="iconbar"></div>
+			</div>
+		</div>
+		<!--<div class="centerText">
+			<p class="bold borderYellow">SAA STUDIO</p>
+			<p>BY SACHIN SEKAR PHOTOGRAPHY</p>
+		</div>-->
+	    <div id="populateTitlePics" class="row">
+            <a href="#events"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
+	    </div>
+	</div>
+
+	<div id="events">
+		<div class="events25" id="event1" onclick="javascript:eventsSlideInit(1)" style='background-image: url("src/images/minified/s1.jpg");'>
+			<!--<div class="eventTitle">Wedding Photography</div>-->
+		</div>
+		<div class="events25" id="event2" onclick="javascript:eventsSlideInit(2)" style='background-image: url("src/images/minified/s2.jpg");'>
+			<!-- <div class="eventTitle">Wedding Videography</div> -->
+		</div>
+		<div class="events25" id="event3" onclick="javascript:eventsSlideInit(3)" style='background-image: url("src/images/minified/s3.jpg");'>
+			<!-- <div class="eventTitle">Outdoor Photography</div> -->
+		</div>
+		<div class="events25" id="event4" onclick="javascript:eventsSlideInit(4)" style='background-image: url("src/images/minified/s4.jpg");'>
+			<!-- <div class="eventTitle">Other events</div> -->
+		</div>
+		<div id="contentBody" class="contentBody hide">
+			<div id="contentHead">
+				<i id="backbutton" class="fa fa-chevron-left fa-2x" onclick="javascript:backToSections();" aria-hidden="true"></i><div id="contentTitle"></div>
+			</div>
+			<div id="contentWrapper">
+				<div id="contentInnerWrapper"></div>
+				<div id="albums" class="row col-md-12"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="testimonials">
+	</div> -->
+
+	<div id="sliderEvents" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div id="innerSlides" data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00">
+                <img data-u="image" src="src/images/Wedding/Album1/1.jpg" />
+                <!-- <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+                <div data-u="caption" data-t="0" style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="img/c-phone-horizontal.png" />
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow: hidden;">
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="img/c-slide-3.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="img/c-navigator-horizontal.png" />
+                    <img data-u="caption" data-t="3" style="position:absolute;top:740px;left:1600px;width:257px;height:300px;z-index:0;" src="img/c-finger-pointing.png" />
+                </div> -->
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="src/images/Wedding/Album2/1.jpg" />
+            </div>
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="src/images/Wedding/Album3/1.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <div id="contactUs">
+    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 fleft Rborder wrapper">
+    		<div class="innerTitle">
+    			Say Hello!
+    		</div>
+    		<div class="innerBody">
+    			Let's capture some memories
+    		</div>
+    		<div class="followUs">
+    			<div>Follow us on</div>
+    			<div class="facebook icons"></div>
+    			<div class="instagram icons"></div>
+    			<div class="gmail icons"></div>
+    		</div>
+    	</div>
+    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 fright wrapper">
+    		<div class="innerTitle">
+    			Business enquiries
+    		</div>
+    		<div class="innerBody2 fleft leftAlign">
+    			Phone:
+    			<div class="innerBodyThin padB20">	
+    				+91 97898 54452<br>
+    				+91 98845 88863
+    			</div>
+    			Address:
+    			<div class="innerBodyThin">	
+    				No. 3/2010, Sundara Bhavan<br>
+    				Thiruvenkadam nagar, Madhanandapuram,<br>
+    				Porur, Chennai - 600125
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	</body>
+	<script>
+	$(document).ready(function ()
+	{	
+        smoothScroll();
+        populatePics();
+        var height = $(window).height();
+        var width = $(window).width();
+        var middle = width/2;
+        var populatePicsHeight = $('#populateTitlePics').height();
+        $('.events25').css('height',height);
+        $('.fa.fa-angle-double-down.fa-2x').css('left',middle);
+        $('.fa.fa-angle-double-down.fa-2x').css('top',populatePicsHeight-50);
+
+		setTimeout(function(){
+            populatePicsHeight = $('#populateTitlePics').height();
+            $('.fa.fa-angle-double-down.fa-2x').css('top',populatePicsHeight-50);
+			$('#jampDiv').addClass('hide');
+		}, 5000);
+
+        $(window).resize(function(){
+            height = $(window).height();
+            width = $(window).width();
+            middle = width/2;
+            setTimeout(function(){
+                populatePicsHeight = $('#populateTitlePics').height();
+                $('.fa.fa-angle-double-down.fa-2x').css('top',populatePicsHeight-50);
+            }, 3000);
+            $('.events25').css('height',height);
+            $('.fa.fa-angle-double-down.fa-2x').css('left',middle);
+        });
+
+		jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("sliderEvents", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+
+	});
+	</script>
+	</html>
+
